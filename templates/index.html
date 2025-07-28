@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animal Health Predictor</title>
+    <style>
+        body { font-family: Arial; background: #f2f2f2; padding: 20px; }
+        h2 { color: #333; }
+        form { background: #fff; padding: 20px; border-radius: 10px; width: 400px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        label { display: block; margin: 10px 0 5px; }
+        select, input { width: 100%; padding: 8px; }
+        button { margin-top: 15px; padding: 10px 20px; background: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #218838; }
+    </style>
+</head>
+<body>
+    <h2>Animal Health Status Checker</h2>
+    <form action="/predict" method="POST">
+        <label>Animal Name</label>
+        <select name="AnimalName">
+            <option value="Cow">Cow</option>
+            <option value="Buffalo">Buffalo</option>
+        </select>
+
+        <label>Blood Brain Disease</label>
+        <select name="BloodBrainDisease">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label>Appearance Disease</label>
+        <select name="AppearenceDisease">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label>General Disease</label>
+        <select name="GeneralDisease">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label>Lung Disease</label>
+        <select name="LungDisease">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label>Abdominal Disease</label>
+        <select name="AbdominalDisease">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <button type="submit">Lets Check the Health Status</button>
+    </form>
+</body>
+</html>

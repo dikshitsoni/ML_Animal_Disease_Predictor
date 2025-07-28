@@ -1,0 +1,31 @@
+<!-- templates/inner-page.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter Animal Details</title>
+</head>
+<body>
+    <h2>Enter Details to Predict Dangerous Condition</h2>
+    <form action="/submit" method="post">
+        <label>Animal Name (Encoded):</label>
+        <input type="number" name="AnimalName" required><br>
+
+        <label>Blood Brain Disease:</label>
+        <input type="number" name="BloodBrainDisease" required><br>
+
+        <label>Appearance Disease:</label>
+        <input type="number" name="AppearenceDisease" required><br>
+
+        <label>General Disease:</label>
+        <input type="number" name="GeneralDisease" required><br>
+
+        <label>Lung Disease:</label>
+        <input type="number" name="LungDisease" required><br>
+
+        <label>Abdominal Disease:</label>
+        <input type="number" name="AbdominalDisease" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
